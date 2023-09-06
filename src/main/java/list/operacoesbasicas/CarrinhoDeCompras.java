@@ -38,7 +38,7 @@ public class CarrinhoDeCompras {
             total += p.getPreco() * p.getQuantidade();
 
         }
-        System.out.println(total);
+        System.out.println("R$:" + total);
     }
 
     public static void main(String[] args) {
@@ -47,9 +47,10 @@ public class CarrinhoDeCompras {
         listaCompras.adicionarItem("Leite em pó", 7.50, 7);
         listaCompras.adicionarItem("Farinha de milho", 2.50, 4);
         listaCompras.adicionarItem("Barra de chocolate ", 5.50, 3);
-        listaCompras.adicionarItem("Sabão em pó ", 18.50, 2);
+        listaCompras.adicionarItem("Sabão em pó", 18.50, 2);
         listaCompras.deletarItem("Leite em pó");
         listaCompras.adicionarItem("Carne", 25.50, 2);
+        listaCompras.deletarItem("Sabão em pó");
         listaCompras.mostrarItens();
         listaCompras.calcularTotal();
     }

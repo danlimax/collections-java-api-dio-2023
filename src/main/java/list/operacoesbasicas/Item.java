@@ -30,7 +30,7 @@ public class Item {
     }
 
     public String toString() {
-        return (nome + (" ") + preco + (" quantidade: ") + quantidade);
+        return nome + (" ") + preco + (" quantidade: ") + quantidade;
     }
 
 }
