@@ -5,14 +5,14 @@ import java.util.List;
 
 public class CarrinhoDeCompras {
     private List<Item> listaCompras;
-    public double total;
+    public double totalPreco;
 
     public CarrinhoDeCompras() {
         this.listaCompras = new ArrayList<>();
 
     }
 
-    public void adicionarItem(String nome, Double preco, Integer quantidade) {
+    public void adicionarItem(String nome, double preco, int quantidade) {
         listaCompras.add(new Item(nome, preco, quantidade));
     }
 
@@ -35,10 +35,10 @@ public class CarrinhoDeCompras {
     public void calcularTotal() {
 
         for (Item p : listaCompras) {
-            total += p.getPreco() * p.getQuantidade();
+            totalPreco += p.getPreco() * p.getQuantidade();
 
         }
-        System.out.println("R$:" + total);
+        System.out.println("R$:" + totalPreco);
     }
 
     public static void main(String[] args) {

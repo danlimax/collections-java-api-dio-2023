@@ -5,13 +5,13 @@ public class Item {
     private double preco;
     private int quantidade;
 
-    public Item(String nome, Double preco, Integer quantidade) {
+    public Item(String nome, double preco, int quantidade) {
         this.nome = nome;
         this.preco = preco;
         this.quantidade = quantidade;
     }
 
-    public void setItem(String nome, Double preco, Integer quantidade) {
+    public void setItem(String nome, double preco, int quantidade) {
         this.nome = nome;
         this.preco = preco;
         this.quantidade = quantidade;
